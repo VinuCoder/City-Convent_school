@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.logo{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 32%;
+    border-radius: 50px;
+}
+.left_nav{
+    width: 70%;
+    display: flex;
+    /* background-color: grey; */
+}
+.left_nav li{
+    list-style: none;
+    padding: 30px 28px;
+}
+.left_nav li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    font-family: sans-serif;
+}
+.left-nav li a:hover{
+    color: gold
+}
+
+.right_nav{
+    width: 30%;
+    text-align: right;
+    /* background-color: black; */
+}
+.right_nav #search{
+    padding: 7px;
+    margin-top: 25px;
+    font-weight: bold;
+    outline: none;
+}
+.right-nav .btn{
+    margin-right: 30px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.background{
+    background: rgba(45, 44, 44, 0.4) url(../img/background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+}
+.line{
+    width: 40px;
+    margin: 5px 3px ;
+    height: 5px;
+    background-color: white;
+}
+
+/* section1 */
+.section1{
+    height: 95vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 150px;
+}
+.main h1{
+    font-size: 4rem;
+    padding-bottom: 50px;
+    text-shadow: 2px 3px 4px gold;
+}
+.main p{
+    max-width: 52%;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+.bt{
+    margin-top: 37px;
+}
+.btns{
+    padding: 4px 19px;
+    margin-inline: 17px;
+    width: 200px;
+    border: 2px solid rgb(234, 223, 156);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    color: white;
+}
+.btns:hover{
+    color: gold;
+    background-color: grey;
+    border: 2px solid black;
+}
+
+/* section2 */
+
+.section2{
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.data1{
+    padding: 0px 54px;
+}
+.data1 h2{
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 1.8rem;
+}
+.data1 p{
+    font-size: 1.2rem;
+}
+.data2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350%;
+    height: 330px;
+}
+.data2 img{
+    width: 100%;
+    height:300px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+
+/* section3 */
+
+.contact{
+    margin-top: 35px;
+    height: 100vh;
+    background-color: rgb(241, 241, 229);
+}
+.contact h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+}
+.form{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.form input, textarea{
+    padding: 9px 12px;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.btnsm{
+    padding: 8px;
+    width: 25%;
+    margin-top: 9px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: 900;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.btnsm:hover{
+    border: 2px solid gold;
+    background-color: grey;
+    color: white;
+}
+
+/* footer */
+.foot{
+    display: flex;
+    justify-content: center;
+    color: gold;
+    padding: 10px;
+}
+
+/* Making it responsive */
+
+@media only screen and (max-width:1100px){
+    .navbar{
+        height: 410px;
+        flex-direction: column;
+        padding: 25px 0px;
+        transition: all 1s ease-out;
+    }
+    .left_nav{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .left_nav li{
+        padding: 23px 28px
+    }
+    .left_nav .logo{
+        width: 55%;
+    }
+    .right_nav{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+    }
+    .right_nav #search{
+        width: 30%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 22px;
+    }
+    .v-nav-resp{
+        opacity: 0;
+    }
+    .section1{
+        height: 65vh;
+    }
+    .main{
+        padding-top: 100px;
+    }
+    .main h1{
+        font-size: 2.2rem;
+        padding-bottom: 30px;
+    }
+    .main p{
+        max-width: 95%;
+        font-size: 0.9rem;
+    }
+    .main .bt{
+        margin-top: 20px;
+    }
+    .main .bt .btns{
+        margin-inline: 1px;
+        width: 136px;
+        font-size: 0.9rem;
+    }
+
+    .section2{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .data1{ 
+        padding: 0px 25px;
+    }
+    .data1 .para{
+        font-size: 1rem;
+    }
+    .data2 img{
+        max-width: 25%;
+        height: 260px;
+    }
+    .form{
+        max-width: 75%;
+    }
+    .foot{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+}
