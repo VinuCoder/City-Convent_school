@@ -58,7 +58,7 @@ html{
 }
 
 .background{
-    background: rgba(45, 44, 44, 0.4) url(../img/background.jpg);
+    background: rgba(45, 44, 44, 0.4) url(../static/background.jpg);
     background-size: cover;
     background-blend-mode: darken;
 }

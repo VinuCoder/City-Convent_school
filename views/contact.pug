@@ -1,0 +1,20 @@
+extend base.pug 
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content 
+    <section class="contact" >
+        <h2>Contact Us</h2>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <input type="number" name="Phone" id="Phone" placeholder="Enter your Mobile_no">
+            <input type="email" name="email" id="email" placeholder="Enter your Email_ID">
+            <input type="password" name="address" id="address" placeholder="Enter your Address">
+            <input type="number" name="age" id="age" placeholder="Enter your Age">
+            <input type="date" name="date" id="date" placeholder="DOB">
+            <textarea name="aboutchild" id="aboutChild" cols="30" rows="10" placeholder="Enter About You"></textarea>
+            <button class="btn btnsm">Submit</button>
+        </div>
+    </section>
